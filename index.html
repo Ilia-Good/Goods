@@ -240,21 +240,6 @@
       border-top:1px solid rgba(255,255,255,0.03);
     }
 
-    /* ========== АДАПТИВ ========== */
-    @media (max-width: 900px) {
-      .about-card { padding:28px; gap:20px; flex-direction:column; text-align:center; }
-      .about-photo { width:150px; height:150px; }
-      body { padding-top: 68px; }
-      h1 { font-size:1.8rem; }
-    }
-    @media (max-width: 480px) {
-      section { padding:56px 14px; }
-      .form-box { padding:18px; }
-      .social-links .btn { width:120px; font-size:14px; }
-      button[type="submit"] { padding:12px; font-size:15px; }
-      body { padding-top: 64px; }
-    }
-
     .a-btn {
       background-color: var(--accent-2);
       color: #fff;
@@ -268,8 +253,15 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    /* ========== АДАПТИВ ========== */
+    @media (max-width: 900px) {
+      .about-photo { flex: 0 0 140px; width: 140px; height: 140px; }
+      .btn-custom { font-size:14px; }
+      section { padding:72px 16px; }
+      .about-card { padding:28px; gap:20px; flex-direction:column; text-align:center; }
+      .about-photo { width:150px; height:150px; }
+      body { padding-top: 68px; }
+      h1 { font-size:1.8rem; }
     }
 
   </style>
